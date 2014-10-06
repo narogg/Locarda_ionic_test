@@ -22,6 +22,12 @@ angular.module('directory.controllers', [])
         }
 
         findAllEmployees();
+		
+		
+		//just adding alert
+		$scope.alertSoon = function() {
+		alert('Uskoro!');
+		};
 
     })
 

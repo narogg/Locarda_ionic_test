@@ -13,13 +13,13 @@
         <list>
             <item ng-repeat="employee in employees" type="item-text-wrap" href="#/employee/{{employee.id}}">  
 			<div class="row">
-				<div class="col col-33">
+				<div class="col col-67">
 					<h3>{{employee.firstName}} {{employee.lastName}}</h3>
 					<p>{{employee.address}}</p>
 				</div>
 
 				<div class="col col-33">
-					<button class="button button-light button-small">
+					<button  ng-click="alertSoon()" class="button button-positive button-small">
 					Prijavi se
 				</button>
 				</div>
