@@ -1,0 +1,32 @@
+<view title="'Locarda'">
+
+    <div class="bar bar-subheader item-input-inset">
+        <label class="item-input-wrapper">
+            <i class="icon ion-ios7-search placeholder-icon"></i>
+            <input id="searchKey" type="search" placeholder="Tra&#382;i po nazivu" ng-model="searchKey" autocorrect="off" >
+            <button class="button button-clear" ng-click="clearSearch()">X</button>
+        </label>
+        <button class="button button-clear" ng-click="search()">Kreni</button>
+    </div>
+
+    <content has-header="true" has-subheader="true">
+        <list>
+            <item ng-repeat="employee in employees" type="item-text-wrap" href="#/employee/{{employee.id}}">  
+			<div class="row">
+				<div class="col col-33">
+					<h3>{{employee.firstName}} {{employee.lastName}}</h3>
+					<p>{{employee.address}}</p>
+				</div>
+
+				<div class="col col-33">
+					<button class="button button-light button-small">
+					Prijavi se
+				</button>
+				</div>
+			</div>								
+            </item>
+            </item>
+        </list>
+    </content>
+
+</view>
