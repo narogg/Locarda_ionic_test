@@ -26,7 +26,9 @@ angular.module('directory.controllers', [])
 		
 		//just adding alert
 		$scope.alertSoon = function() {
-		alert('Uskoro!');
+		var id = 1;
+		var api = "https://locarda.herokuapp.com/places/check_in/"
+		alert('Uskoro api na: \n'+api+id);
 		};
 
     })
